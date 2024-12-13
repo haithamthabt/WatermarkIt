@@ -39,5 +39,10 @@ label.pack(pady=20)
 button = tk.Button(app, text="Select Video and Add Moving Watermark", command=add_moving_watermark)
 button.pack(pady=10)
 
+# Add a copyright label at the bottom
+copyright_label = tk.Label(app, text="© Limitless Media 2024", font=("Arial", 10), fg="gray")
+copyright_label.pack(side="bottom", pady=10)  # Positioned at the bottom with padding
+
+
 # Run the Tkinter main loop
 app.mainloop()
